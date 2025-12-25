@@ -1,4 +1,4 @@
-# Splitwise Clone
+# spill it wisely
 
 A full-stack expense sharing application built with Next.js 14 and SQLite.
 
