@@ -4,6 +4,7 @@ import useSWR from 'swr';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Avatar from '@/components/Avatar';
+import CurrencySelector from '@/components/CurrencySelector';
 import { CURRENCIES, CATEGORIES } from '@/lib/utils';
 import { useApp } from '@/context/AppContext';
 
@@ -223,6 +224,12 @@ export default function AddExpense() {
                         ))}
                     </select>
                 </div>
+
+                <CurrencySelector
+                    value={currency}
+                    onChange={setCurrency}
+                    label="Currency"
+                />
 
                 <div style={{ marginTop: '40px', textAlign: 'center' }}>
                     <button
