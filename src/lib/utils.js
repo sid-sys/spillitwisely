@@ -4,7 +4,14 @@ export function formatCurrency(amount, currency = 'GBP') {
         GBP: '£',
         USD: '$',
         EUR: '€',
-        INR: '₹'
+        INR: '₹',
+        JPY: '¥',
+        AUD: 'A$',
+        CAD: 'C$',
+        CHF: 'Fr',
+        CNY: '¥',
+        SEK: 'kr',
+        NZD: 'NZ$'
     };
 
     const symbol = symbols[currency] || currency + ' ';
@@ -94,5 +101,12 @@ export const CURRENCIES = [
     { code: 'GBP', symbol: '£', name: 'British Pound' },
     { code: 'USD', symbol: '$', name: 'US Dollar' },
     { code: 'EUR', symbol: '€', name: 'Euro' },
-    { code: 'INR', symbol: '₹', name: 'Indian Rupee' }
+    { code: 'INR', symbol: '₹', name: 'Indian Rupee' },
+    { code: 'JPY', symbol: '¥', name: 'Japanese Yen' },
+    { code: 'AUD', symbol: 'A$', name: 'Australian Dollar' },
+    { code: 'CAD', symbol: 'C$', name: 'Canadian Dollar' },
+    { code: 'CHF', symbol: 'Fr', name: 'Swiss Franc' },
+    { code: 'CNY', symbol: '¥', name: 'Chinese Yuan' },
+    { code: 'SEK', symbol: 'kr', name: 'Swedish Krona' },
+    { code: 'NZD', symbol: 'NZ$', name: 'New Zealand Dollar' }
 ];
